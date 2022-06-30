@@ -1,0 +1,453 @@
+* {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 600px) {
+  .thedata{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .thedata{
+    width: 100%;
+  }
+}
+
+#reg{
+  
+  background-color:#04AA6D;
+  animation-name: regani;
+  animation-duration: 3s;
+ 
+}
+
+@keyframes regani {
+  from {background-color:#04AA6D;}
+  to {background-color:#2ef58b;}
+  
+
+}
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  width: 95%;
+  margin: auto;
+}
+
+.topnav:hover {
+  background-color:none;
+  box-shadow: 0 0 50px azure;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size:2.3rem;
+  font-family:Raleway;
+  
+}
+
+.topnav a:hover {
+  background-color:azure;
+  color: black;
+  box-shadow: azure;
+}
+
+.topnav a.active {
+  background-color:orange;
+  color: azure;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#log{
+  float: right;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thedata a:not(:first-child) {display: none;}
+  .thedata{
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thedata.responsive {position: relative;}
+  .thedata.responsive.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .thedata.responsive.a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.container{
+   border: 3rem;
+  width: 100%;
+  height: 100%;
+ 
+  
+}
+.link{
+  cursor: pointer;
+  text-decoration: none;
+  font: 1rem impact ;
+  color:black;
+}
+
+
+.thedata{
+  display:fill;
+  border:rgb(243, 167, 27) ;
+  border-style:solid;
+  background-color:#f7dbc7;
+  width: 95%;
+  min-width: 650px;
+  padding: 50px 50px;
+  margin: 20px 20px;
+  word-wrap: normal;
+  margin:2rem auto;
+}
+
+
+
+
+.thedata:hover {
+  box-shadow: 0 0 80px silver;
+}
+
+  .cname {
+    font-family: Oswald;
+    font-size:4rem;
+    margin-top:5rem;
+    padding: auto;
+    
+    
+  }
+  .ename {
+   
+    font-family: Century Gothic;
+    font-size:3rem;
+    }
+  .venue {
+   font-family: Century Gothic;
+    height:2rem;
+    font-size: 2rem;
+  }
+  .date {
+    font-family: Oswald;
+    font-size: 2rem;
+  }
+  .time {
+    
+    font-family: Oswald;
+    
+    height: 1rem;
+    font-size: 2rem;
+    left: 415px;
+    
+  }
+  
+  .presents {
+    font-family: "Dancing Script";
+     font-size: 2.5rem; 
+  }
+  #logo {
+   
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: auto;
+    margin:0.75rem;
+  }
+
+  #logo2 {
+    float: right;
+    height: 6rem;
+    width: 6rem;
+    padding: auto;
+    margin:0.75rem;
+  }
+
+  #passi{
+    height: 2rem; 
+    width: 2rem;
+    float: right;
+  }
+ 
+  .desc {
+   
+    
+    left: 188px;
+    width: 1rem;
+    height: 1rem;
+    font-family: Cairo;
+    font-size:1.5rem;
+    word-wrap: normal;
+   
+  }
+ 
+  .edit,.del{
+  border-radius: 5px;
+  background-color:#d6f1e3;
+  padding: 66px 20px;
+  margin:3rem 0rem 0 20rem;
+  font-size:3rem;
+  font-family: oswald;
+  border-radius: 2rem;
+  border:#2ef58b ;
+  border-style:solid;
+  width: 50%;
+  }
+  #rad{ width:1.5rem; height:1.5rem;
+  cursor: pointer; }
+
+  #sub,#usub,#sublog{
+    background-color: #04AA6D;
+    color: white;
+    font:1rem Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:1rem;
+    
+  }
+
+  #reg{
+    background-color: #04AA6D;
+    color: white;
+    font:2rem Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    padding: 1rem ;
+    text-align: center;
+    width: 10rem;
+    border:#04AA6D ;
+    border-radius:0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    
+    
+  }
+
+  
+
+  #cancel{
+    background-color:black;
+    color: white;
+    font:1rem Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:1rem;
+  }
+  #sub:hover,#usub:hover,#sublog:hover,#reg:hover {
+    background-color: #a1e9a4;
+    box-shadow: 0 0 5px #04AA6D ;
+  }
+  #cancel:hover {
+    background-color:rgb(233, 105, 105);
+    box-shadow: 0 0  5px rgb(233, 105, 105) ;
+  }
+  
+  
+  #deldel{
+    background-color:rgb(238, 94, 94);
+    color: white;
+    font:1rem Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:1rem;
+  }
+
+  #delcan{
+    background-color:black;
+    color: white;
+    font:1rem Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin:1rem;
+  }
+  #delcan:hover {
+    background-color:black;
+    box-shadow: 0 0 5px gray ;
+  }
+  #deldel:hover {
+    background-color:rgb(233, 105, 105);
+    box-shadow: 0 0  5px rgb(233, 105, 105) ;
+  }
+
+  
+.upda{
+  border-radius: 5px;
+  background-color:#d6f1e3;
+  padding:5rem 5rem;
+  margin:3rem auto;
+  font-size:3rem;
+  font-family: oswald;
+  border-radius: 2rem;
+  border:#2ef58b ;
+  border-style:solid;
+  width: 50%;
+}
+
+.creator{
+  
+  font-family: oswald;
+  font-size: 3rem;
+  margin-left: 20rem;
+ 
+}
+
+.loginf{
+  border-radius: 5px;
+  border:#2ef58b ;
+  border-style:solid;
+  background-color:#d6f1e3;
+  padding: 66px 20px;
+  margin: 5rem auto;
+  font-size:4rem;
+  font-family: oswald;
+  border-radius: 2rem;
+  min-width: 1100px;
+  width: 50%;
+}
+
+.passchange{
+  border-radius: 5px;
+  background-color:#d6f1e3;
+  padding:4rem;
+  margin: 5rem auto;
+  font-size:2.5rem;
+  font-family: oswald;
+  border-radius: 2rem;
+  border:#2ef58b ;
+  border-style:solid;
+  width: 70%;
+}
+#passch{
+  font-size:2.2rem;
+  float: right;
+  margin-right:20rem;
+}
+
+#subpassch{
+  background-color: #04AA6D;
+  color: white;
+  font:1rem Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+#subpassch:hover{
+  background-color: #a1e9a4;
+  box-shadow: 0 0 5px #04AA6D ;
+}
+
+.Error{
+
+  color: rgb(255, 103, 103);
+  font-family: cairo;
+  font-size: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: 40%;
+  height:4rem;
+  border: rgb(255, 103, 103);
+  border-style: solid;
+  border-radius: 1rem;
+  background-color: rgb(235, 202, 202);
+}
+.success{
+
+  color:#2ef58b;
+  font-family: cairo;
+  font-size: 2rem;
+  margin: 1rem auto;
+  text-align: center;
+  width: 40%;
+  height:4rem;
+  border:#2ef58b;
+  border-style: solid;
+  border-radius: 1rem;
+  background-color: #ceffd1;
+}
+
+#udate,#ucname,#uename,#udate,#utime,#ulink,#uvenue,#user,#ipass{
+  font-size:2.5rem;
+  
+ 
+  
+ }
+ #udesc{
+  width:5rem;
+  font-size: 4rem;
+  
+ }
+
+ 
+#selector{
+  width:15vw;
+  height:5vh;
+  font-size: large;
+  font-family:Oswald;
+}
+#banner{
+  width:90%;
+  height:10rem;
+  margin-left: 1rem;
+}

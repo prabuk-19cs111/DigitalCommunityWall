@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='owl.theme.default.min.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700|Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Cairo:200,300,regular,500,600,700,800,900|Dancing+Script:regular,500,600,700|Prompt:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+</head>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav" id="myTopnav">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('create') }}">Create</a>
+    <a href="{{ url_for('edit') }}"  class="active">Edit</a>
+    <a href="{{ url_for('delete') }}">Delete</a>
+    <a href="{{ url_for('login') }}" id="log">Login / logout</a>
+    <a href="{{ url_for('changepword') }}"><img src="{{url_for('static', filename='pschange.png')}}" id="passi"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  
+         </div>
+<body>
+    <form method="post" class="upda">
+        <label>Date</label>
+        <input type="date" value="{{ i['date'] }}" name="date" required id="udate"><br>
+        <label>CLUBNAME</label>
+        <input type="text" value="{{ i['cname'] }}" name="cname" required id="ucname" readonly></input><br>
+        <label>Event name</label>
+        <input type="text" value="{{ i['ename'] }}" name="ename" required id="uename"></input><br>
+        <label>Description</label>
+        <input type="text" value="{{ i['desc'] }}" name="desc" required style="height: 100px;width: 500px;" id="udesc"></input><br>
+        <label>Time</label>
+        <input type="time" value="{{ i['time'] }}" name="time" required id="utime"></input><br>
+        <label>Link</label>
+        <input type="url" value="{{ i['link'] }}" name="link" required id="ulink"></input><br>
+        <label>Venue</label>
+        <input type="text" value="{{ i['venue'] }}" name="venue" required id="uvenue"></input><br>
+        <button type="submit" id="usub">Update</button>
+    </form>
+</body>
+</html>

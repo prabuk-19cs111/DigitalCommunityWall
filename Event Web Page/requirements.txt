@@ -1,0 +1,7 @@
+Flask==2.0.2
+Flask-Login==0.5.0
+Jinja2==3.0.3
+pymongo==4.0.1
+hashlib
+json
+functools
